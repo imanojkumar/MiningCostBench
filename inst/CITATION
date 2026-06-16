@@ -1,10 +1,16 @@
-citHeader("To cite MiningCostBench in publications use:")
+citHeader("To cite MiningCostBench in publications, please use:")
 
-bibentry(
-  bibtype  = "Manual",
+citEntry(
+  entry    = "Manual",
   title    = "MiningCostBench: Benchmark Production Costs and Cost Drivers for Mining Commodities",
   author   = person("Manoj", "Kumar"),
   year     = "2026",
   note     = "R package version 0.1.0",
-  url      = "https://github.com/imanojkumar/MiningCostBench"
+  url      = "https://github.com/imanojkumar/MiningCostBench",
+  doi      = "10.5281/zenodo.20722764",
+  textVersion = paste(
+    "Kumar, M. (2026). MiningCostBench: Benchmark Production Costs and Cost Drivers",
+    "for Mining Commodities (R package version 0.1.0).",
+    "https://doi.org/10.5281/zenodo.20722764"
+  )
 )
