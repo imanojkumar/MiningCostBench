@@ -1,4 +1,5 @@
 # MiningCostBench
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20722764.svg)](https://doi.org/10.5281/zenodo.20722764)
 
 > Benchmark production costs and structured cost drivers for mining commodities.
 
