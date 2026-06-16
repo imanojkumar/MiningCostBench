@@ -1,0 +1,10 @@
+citHeader("To cite MiningCostBench in publications use:")
+
+bibentry(
+  bibtype  = "Manual",
+  title    = "MiningCostBench: Benchmark Production Costs and Cost Drivers for Mining Commodities",
+  author   = person("Manoj", "Kumar"),
+  year     = "2026",
+  note     = "R package version 0.1.0",
+  url      = "https://github.com/imanojkumar/MiningCostBench"
+)

@@ -1,0 +1,14 @@
+section,topic,detail
+NOTES,Cost basis differs by commodity,"Bulk commodities are sold by the tonne (cost = $/t of product). Metals are sold as metal/concentrate, so '$/t ore milled' is internal; the meaningful figure is cost per unit CONTAINED METAL (C1/AISC). Roughly a third of India's 30 critical minerals are BY-PRODUCTS with no standalone mining cost."
+NOTES,Production cost is not price,"Cash/production cost is well below market price (e.g. copper sells >$10,000/t while C1 ~$4,400-6,000/t Cu; uranium price ~$70-95/lb vs cost $15-60/lb)."
+NOTES,Ranges are indicative,"Grade, method, depth, geography, currency and by-product credits can move a single commodity's unit cost 3-5x. Treat as orientation, not precision. Many critical-mineral costs are proprietary; driver logic is more reliable than the dollar figure."
+NOTES,C1 vs AISC,"C1 = direct cash cost. AISC adds sustaining capex, deferred stripping, G&A and closure accruals (usually per lb Cu / per oz Au)."
+NOTES,India framing,India imports >90% of most critical minerals; classifies coal/lignite/uranium/thorium as fuel minerals; grades non-coking coal G1-G17 by GCV; thorium & much REE/zircon are beach-sand (monazite/ilmenite) co-products under Atomic Energy regulation.
+SOURCES,Critical minerals list,"Ministry of Mines / PIB, 30 critical minerals (June-July 2023); National Critical Mineral Mission (2025)."
+SOURCES,Iron ore / copper costs,Rio Tinto FY2025 (Pilbara FOB ~$23.5/wmt; Cu C1 67c/lb); UBS peer notes; Capstone Pinto Valley 2025 reserve cost assumptions; MDPI open-pit copper cost study (2025).
+SOURCES,Coal,IEA Coal 2025; Alpha Metallurgical 2025 guidance ($103-108/t met coal); US EIA coal reports.
+SOURCES,Uranium,Industry cost tiers (ISR $15-30/lb; avg $30-60/lb; high-cost $60-120+/lb); BHP Olympic Dam ~$45-50/lb; EIA & UxC.
+SOURCES,Precious metals,"S&P Global Mine Cost Outlook 2026 (Pt AISC ~$1,006/oz; Au AISC ~$1,475-1,521/oz); silver AISC ~$26.86/oz (2024)."
+SOURCES,Cobalt / REE / graphite,USGS MCS 2026 (cobalt); IEA Global Critical Minerals Outlook 2025; Thunder Said Energy (REE ~$70/kg blended for viable IRR).
+SOURCES,Bauxite / manganese,USGS MCS 2025; ChemAnalyst/IMARC bauxite pricing; Fastmarkets/SMM manganese (per dmtu).
+SOURCES,Caveat,"Figures paraphrased & compiled June 2026 for orientation. Verify against current company guidance or a cost-curve provider (Wood Mackenzie, CRU, S&P Global) before publication."

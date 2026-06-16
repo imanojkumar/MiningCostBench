@@ -1,0 +1,24 @@
+driver_category,specific_drivers,rationale
+Energy,"Diesel (haulage, fleet); electricity (comminution, pumping, ventilation, electrolysis, arc furnaces); gas (process heat)",Often 25-40% of operating cost; grinding/smelting/electrolysis can be the single largest line item.
+Labour,Wages & on-costs; skill availability; FIFO/camp; productivity; automation,"Major cost; autonomous haulage & remote ops are key levers, especially deep underground."
+Stripping / development,Strip ratio (waste:ore); deferred stripping; UG development metres & backfill,Every waste tonne is paid for but sells nothing; rises as pits deepen.
+Ore grade & depletion,Head grade; grade decline; dilution; cut-off-grade policy,"Lower grade => more tonnes mined/milled per unit metal, amplifying every other unit cost."
+Comminution & recovery,Crush/grind energy; ore hardness (Bond Wi); metallurgical recovery; refractoriness,Dominates processing cost for hard-rock metals; recovery loss directly raises cost/unit metal.
+Processing route,HPAL vs RKEF (Ni); flotation vs leach (Cu); free-mill vs refractory (Au); spodumene vs brine (Li); separation (REE),Route choice can swing total-to-metal cost more than the mining step itself.
+Logistics,In-pit haulage; road; rail; port & shiploading; ocean freight; conveyor/pipeline,"Can exceed mine-gate cost for bulk, low-value commodities (coal, iron ore, bauxite, aggregates, potash)."
+Scale / throughput,Plant & fleet capacity; utilisation; fixed-cost dilution,"Larger, steadier throughput spreads fixed cost and lowers unit cost."
+Reagents & consumables,"Explosives; grinding media; tyres; lime, cyanide, collectors, frothers, acid, caustic soda, soda ash",Explosives = small energy share but large cost share; reagent intensity scales with grade/mineralogy.
+Maintenance & equipment,Sustaining maintenance; availability/utilisation; MARC contracts; spares & tyres,Availability swings hit both unit cost and lost production.
+Water,"Supply, desalination, pumping, treatment, dewatering, scarcity",Rising constraint (esp. arid copper/lithium regions); desalination + pumping is capital- & energy-heavy.
+Tailings & waste,TSF construction; dam safety & monitoring; waste-rock; red mud; phosphogypsum; radioactive residues,Post-Brumadinho (GISTM) standards materially raised cost; radioactive residues (U/Th) add regulation.
+"Royalties, taxes & govt take",Ad-valorem/specific royalties; export duties; cess; DMF/NMET (India); windfall taxes,Highly jurisdiction-specific; can be double-digit % of revenue or a fixed $/t.
+Environmental & ESG,Permitting; emissions monitoring; carbon price; biodiversity offsets; community programs,Rising structurally; carbon-price exposure increasingly material for energy-intensive processing.
+Closure & rehabilitation,Progressive rehab; closure provisioning & financial assurance,"Accrued over life; large legacy liability for big-footprint surface operations (lignite, iron ore)."
+"Land, R&R & social licence",Land acquisition; resettlement & rehabilitation; consent delays; CRZ/forest clearance,Especially significant in India; delays sterilise reserves and add cost.
+Currency & inflation,Local-cost/USD-revenue FX exposure; input-cost escalation,"A stronger producer currency (AUD, ZAR, BRL, INR) raises USD unit costs with no operational change."
+Orebody & geotechnical,Depth; ground conditions; hydrogeology; ore continuity/complexity; seismicity; gas (coal),"Drives method, support, dewatering, dilution — all unit-cost levers."
+By-product credits,Co-product revenue (Au/Ag/Mo/Co/Pb/Re/Se/Te) netted against primary metal,Can halve or zero net C1; the main reason 2025 copper/precious costs fell.
+By-product DEPENDENCE (minor metals),"Ga, Ge, In, Re, Te, Se, Cd, Hf, Bi recovered only from host-metal streams",These have NO standalone mining cost; supply is inelastic to their own price — a structural vulnerability.
+Capital intensity,Sustaining capex (feeds AISC); deferred stripping; fleet replacement,The bridge from C1 cash cost to AISC.
+Infrastructure & sovereign risk,"Power grid, roads, water, port (greenfield vs brownfield); permitting timelines; political stability",Greenfield projects in remote/developing regions carry far higher build & operating cost.
+Supply concentration / geopolitics,Single-country dominance (China REE/Ga/Ge/W; DRC Co; Indonesia Ni); export controls & bans,Sets price floors/spikes independent of mine cost; central to 'critical mineral' designation.

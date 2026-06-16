@@ -1,0 +1,7 @@
+^data-raw$
+^_pkgdown\.yml$
+^docs$
+^\.github$
+^BLUEPRINT\.md$
+^.*\.Rproj$
+^\.Rproj\.user$

@@ -1,0 +1,72 @@
+---
+title: "Benchmarking mining commodity costs and their drivers"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Benchmarking mining commodity costs and their drivers}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+library(MiningCostBench)
+```
+
+## What this package is
+
+`MiningCostBench` bundles indicative cash/production cost ranges and a
+structured, six-stage cost-driver breakdown for mining and mineral commodities,
+across six categories. It is an orientation and teaching dataset, **not** a
+substitute for a commercial cost-curve service.
+
+## Categories and coverage
+
+```{r}
+mcb_categories()
+table(commodity_costs$category)
+```
+
+## Looking up a commodity
+
+```{r}
+mcb_costs("copper")[, c("commodity", "cost_basis", "cost_text", "meaningful_metric")]
+```
+
+Matching is case-insensitive and falls back to partial matches:
+
+```{r}
+mcb_commodities("Precious Metals")
+```
+
+## The cost-driver breakdown
+
+Every commodity is decomposed into six driver stages. `mcb_drivers()` returns
+this in tidy long form, ready for `dplyr`/`ggplot2`:
+
+```{r}
+mcb_drivers("gold")
+```
+
+## By-product minerals
+
+A structurally important subset of critical minerals are not mined on their own;
+they are recovered as by-products and so have no standalone mining cost:
+
+```{r}
+mcb_byproducts()$commodity
+```
+
+## Cross-cutting drivers and sources
+
+```{r}
+head(mcb_cross_cutting(), 4)
+mcb_sources("SOURCES")
+```
+
+## Caveats
+
+Figures are indicative cash/production costs (not prices) and can vary 3-5x with
+grade, method, depth, geography, currency and by-product credits. For many
+critical minerals the **driver logic is more reliable than the dollar figure**.
+Always verify against current company guidance or a commercial cost-curve
+provider (Wood Mackenzie, CRU, S&P Global) before publication.

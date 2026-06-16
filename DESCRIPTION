@@ -1,0 +1,34 @@
+Package: MiningCostBench
+Type: Package
+Title: Benchmark Production Costs and Cost Drivers for Mining Commodities
+Version: 0.1.0
+Authors@R: c(
+    person("Manoj", "Kumar", email = "you@example.com",
+           role = c("aut", "cre"), comment = c(ORCID = "0000-0000-0000-0000")))
+Description: A curated, citable data package of indicative cash/production cost
+    ranges and structured cost-driver breakdowns for mining and mineral
+    commodities, organised by category: coal and lignite by rank, base metals,
+    precious metals, fuel and atomic minerals, India's 30 critical minerals,
+    and bulk/industrial minerals. Each commodity carries a six-stage cost-driver
+    decomposition (extraction, processing, energy/reagents, logistics,
+    fiscal/ESG and structural), a by-product flag, and a separate table of
+    cross-cutting cost drivers. Notes and indicative sources are bundled so the
+    figures remain traceable. Intended as an orientation and teaching dataset,
+    not a substitute for a commercial cost-curve service.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.6.0)
+Suggests:
+    tibble,
+    dplyr,
+    ggplot2,
+    scales,
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+RoxygenNote: 7.3.1
+URL: https://github.com/imanojkumar/MiningCostBench
+BugReports: https://github.com/imanojkumar/MiningCostBench/issues

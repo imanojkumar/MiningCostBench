@@ -1,0 +1,14 @@
+url: https://imanojkumar.github.io/MiningCostBench
+template:
+  bootstrap: 5
+reference:
+  - title: Cost lookups
+    contents: [mcb_costs, mcb_commodities, mcb_categories, mcb_search]
+  - title: Drivers
+    contents: [mcb_drivers, mcb_cross_cutting, mcb_byproducts]
+  - title: Provenance
+    contents: [mcb_sources]
+  - title: Visualisation
+    contents: [mcb_plot_overview]
+  - title: Data
+    contents: [commodity_costs, cost_drivers, cost_sources]
