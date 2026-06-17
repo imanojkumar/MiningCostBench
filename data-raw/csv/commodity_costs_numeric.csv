@@ -1,0 +1,54 @@
+category,commodity,vintage,cost_low,cost_high,cost_unit,cost_currency,cost_basis,is_metal_basis,numeric_available,parse_note
+Coal & Lignite,Peat,2025-26,5.0,15.0,/t,USD,Per tonne (air-dried),FALSE,TRUE,first range parsed
+Coal & Lignite,Lignite (brown coal),2025-26,8.0,20.0,/t,USD,Per tonne ROM,FALSE,TRUE,first range parsed
+Coal & Lignite,Sub-bituminous coal,2025-26,10.0,22.0,/t,USD,Per tonne saleable,FALSE,TRUE,first range parsed
+Coal & Lignite,Bituminous - thermal / steam (non-coking),2025-26,12.0,35.0,/t,USD,Per tonne saleable,FALSE,TRUE,first range parsed
+Coal & Lignite,Bituminous - coking / metallurgical,2025-26,80.0,140.0,/t,USD,Per tonne saleable (washed),FALSE,TRUE,first range parsed
+Coal & Lignite,Anthracite,2025-26,90.0,200.0,/t,USD,Per tonne saleable,FALSE,TRUE,first range parsed
+Base Metals,Copper,2025-26,8.0,20.0,/t,USD,Per tonne ore milled / per tonne Cu,FALSE,TRUE,first range parsed
+Base Metals,Aluminium (Bauxite-Alumina-Al),2025-26,15.0,35.0,/t,USD,Per tonne aluminium (3-stage chain),FALSE,TRUE,first range parsed
+Base Metals,Lead,2025-26,30.0,60.0,/t,USD,Per tonne ore milled / per tonne Pb,FALSE,TRUE,first range parsed
+Base Metals,Zinc,2025-26,30.0,60.0,/t,USD,Per tonne ore milled / per tonne Zn,FALSE,TRUE,first range parsed
+Base Metals,Nickel,2025-26,10.0,30.0,/t,USD,Per tonne ore mined / per tonne Ni,FALSE,TRUE,first range parsed
+Base Metals,Tin,2025-26,25000.0,35000.0,/t,USD,Per tonne ore / per tonne Sn,FALSE,TRUE,first range parsed
+Precious Metals,Gold,2025-26,15.0,45.0,/t,USD,Per tonne ore milled / per ounce Au,FALSE,TRUE,first range parsed
+Precious Metals,Silver,2025-26,26.0,28.0,/oz,USD,Per ounce Ag,TRUE,TRUE,first range parsed
+Precious Metals,Platinum-Group Elements (PGE),2025-26,,,,USD,Per ounce (4E/6E basket),FALSE,FALSE,no clean numeric range
+Fuel & Atomic,Uranium,2025-26,15.0,30.0,/lb,USD,Per pound U3O8 (yellowcake),TRUE,TRUE,first range parsed
+Fuel & Atomic,Thorium,2025-26,8.0,10.0,(unit unclear),USD,Per tonne monazite / per kg Th,FALSE,TRUE,first range parsed
+Critical Minerals (India 30),Antimony,2025-26,20000.0,60000.0,/t,USD,Per tonne Sb (metal/trioxide),FALSE,TRUE,first range parsed
+Critical Minerals (India 30),Beryllium,2025-26,,,,USD,Per kg Be (in alloy/oxide),FALSE,FALSE,no clean numeric range
+Critical Minerals (India 30),Bismuth,2025-26,8000.0,40000.0,/t,USD,Per tonne Bi,FALSE,TRUE,first range parsed
+Critical Minerals (India 30),Cobalt,2025-26,33000.0,56000.0,/t,USD,Per tonne Co,FALSE,TRUE,first range parsed
+Critical Minerals (India 30),Copper,2025-26,2.0,2.75,/lb,USD,Per t ore / per t Cu,TRUE,TRUE,first range parsed
+Critical Minerals (India 30),Gallium,2025-26,,,,USD,Per kg Ga,FALSE,FALSE,no clean numeric range
+Critical Minerals (India 30),Germanium,2025-26,,,,USD,Per kg Ge,FALSE,FALSE,no clean numeric range
+Critical Minerals (India 30),Graphite (natural flake),2025-26,400.0,1000.0,/t,USD,Per tonne concentrate,FALSE,TRUE,first range parsed
+Critical Minerals (India 30),Hafnium,2025-26,,,,USD,Per kg Hf,FALSE,FALSE,no clean numeric range
+Critical Minerals (India 30),Indium,2025-26,,,,USD,Per kg In,FALSE,FALSE,no clean numeric range
+Critical Minerals (India 30),Lithium,2025-26,4000.0,6000.0,/t LCE,USD,Per tonne LCE,TRUE,TRUE,first range parsed
+Critical Minerals (India 30),Molybdenum,2025-26,20000.0,45000.0,/t,USD,Per tonne Mo,FALSE,TRUE,first range parsed
+Critical Minerals (India 30),Niobium,2025-26,,,,USD,Per tonne Nb (in FeNb),FALSE,FALSE,no clean numeric range
+Critical Minerals (India 30),Nickel,2025-26,10.0,30.0,/t ore,USD,Per t ore / per t Ni,FALSE,TRUE,first range parsed
+Critical Minerals (India 30),PGE (Platinum-Group),2025-26,,,,USD,Per oz (4E/6E basket),FALSE,FALSE,no clean numeric range
+Critical Minerals (India 30),Phosphorous (phosphate rock),2025-26,30.0,60.0,/t,USD,Per tonne rock,FALSE,TRUE,first range parsed
+Critical Minerals (India 30),Potash,2025-26,100.0,200.0,/t,USD,Per tonne KCl (MOP),FALSE,TRUE,first range parsed
+Critical Minerals (India 30),REE (Rare Earths),2025-26,,,,USD,Per kg/tonne REO (separated oxides),FALSE,FALSE,no clean numeric range
+Critical Minerals (India 30),Rhenium,2025-26,1000.0,2500.0,/kg,USD,Per kg Re,FALSE,TRUE,first range parsed
+Critical Minerals (India 30),Silicon (metallurgical),2025-26,1500.0,3000.0,/t,USD,Per tonne Si metal,FALSE,TRUE,first range parsed
+Critical Minerals (India 30),Strontium,2025-26,,,,USD,Per tonne Sr (as carbonate),FALSE,FALSE,no clean numeric range
+Critical Minerals (India 30),Tantalum,2025-26,,,,USD,Per kg/lb Ta2O5,FALSE,FALSE,no clean numeric range
+Critical Minerals (India 30),Tellurium,2025-26,,,,USD,Per kg Te,FALSE,FALSE,no clean numeric range
+Critical Minerals (India 30),Tin,2025-26,25000.0,35000.0,/t,USD,Per t Sn,FALSE,TRUE,first range parsed
+Critical Minerals (India 30),Titanium (mineral sands),2025-26,150.0,300.0,/t,USD,Per tonne ilmenite/rutile,FALSE,TRUE,first range parsed
+Critical Minerals (India 30),Tungsten,2025-26,30000.0,45000.0,/t,USD,Per tonne W (in APT),FALSE,TRUE,first range parsed
+Critical Minerals (India 30),Vanadium,2025-26,5.0,12.0,/lb,USD,Per kg V (as V2O5),TRUE,TRUE,first range parsed
+Critical Minerals (India 30),Zirconium (zircon),2025-26,1500.0,2500.0,/t,USD,Per tonne zircon,FALSE,TRUE,first range parsed
+Critical Minerals (India 30),Selenium,2025-26,,,,USD,Per kg Se,FALSE,FALSE,no clean numeric range
+Critical Minerals (India 30),Cadmium,2025-26,,,,USD,Per tonne Cd,FALSE,FALSE,no clean numeric range
+Bulk & Industrial,"Iron Ore (seaborne, hematite)",2025-26,18.0,30.0,/t,USD,"Per tonne saleable ore (FOB, C1)",FALSE,TRUE,first range parsed
+Bulk & Industrial,Manganese Ore,2025-26,20.0,50.0,/t,USD,Per tonne saleable (FOB); priced per dmtu,FALSE,TRUE,first range parsed
+Bulk & Industrial,Limestone (cement/flux/aggregate),2025-26,3.0,10.0,/t,USD,Per tonne ROM/product,FALSE,TRUE,first range parsed
+Bulk & Industrial,Chromite,2025-26,30.0,80.0,/t,USD,Per tonne ore,FALSE,TRUE,first range parsed
+Bulk & Industrial,Phosphate Rock,2025-26,30.0,60.0,/t,USD,Per tonne rock,FALSE,TRUE,first range parsed
+Bulk & Industrial,Construction Aggregates / Silica Sand,2025-26,3.0,12.0,/t,USD,Per tonne,FALSE,TRUE,first range parsed

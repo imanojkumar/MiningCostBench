@@ -17,6 +17,17 @@ It is deliberately an **orientation / teaching dataset**, not a commercial
 cost-curve product. That framing is baked into the documentation, the
 `cost_sources` table, and every relevant docstring.
 
+> **Caveats carried throughout the package.** (1) All cost figures are
+> *indicative orientation values — not official, audited or authoritative
+> numbers*, and not prices; they must not be the sole basis for investment,
+> procurement, valuation, regulatory or policy decisions. (2) Four
+> critical-mineral rows (Copper, Nickel, Tin, PGE) are *cross-reference* rows:
+> the mineral is covered but its detailed six-stage driver breakdown lives in the
+> Base/Precious Metals category, not the critical-minerals row. Both caveats
+> appear in `README.md`, the package- and dataset-level roxygen docs, the
+> `mcb_drivers()` help, the vignette, and the bundled `cost_sources` data
+> (`mcb_sources("NOTES")`).
+
 It is designed to sit **alongside `MiningAnalytics`**: same author, same
 CamelCase house style, same `testthat` + GitHub Actions discipline. It could
 later be merged in as a data module, but a standalone data package keeps the
@@ -91,7 +102,7 @@ artefacts. See §6 to generate them.
 
 ## 4. Data model
 
-### 4.1 `commodity_costs` (53 rows × 14 cols)
+### 4.1 `commodity_costs` (53 rows × 15 cols)
 
 | Column | Type | Notes |
 |---|---|---|
@@ -99,23 +110,34 @@ artefacts. See §6 to generate them.
 | `commodity` | chr | Commodity / grade name |
 | `source_method` | chr | Geological source + mining/processing method |
 | `cost_basis` | chr | What the $ is per (ore vs product vs metal) |
-| `cost_text` | chr | Indicative cash/production cost range (2025-26) |
+| `cost_text` | chr | Indicative cash/production cost range |
 | `meaningful_metric` | chr | Economically meaningful metric (C1/AISC per lb/oz) |
-| `driver_extraction` | chr | Stage 1 driver text |
-| `driver_processing` | chr | Stage 2 |
-| `driver_energy_reagents` | chr | Stage 3 |
-| `driver_logistics` | chr | Stage 4 |
-| `driver_fiscal_esg` | chr | Stage 5 |
-| `driver_structural` | chr | Stage 6 |
+| `driver_extraction` … `driver_structural` | chr | The six driver stages |
 | `is_byproduct` | lgl | TRUE = recovered as a by-product, no standalone cost |
 | `drivers_raw` | chr | Full original six-stage prose (fidelity/fallback) |
+| `vintage` | chr | Snapshot key (e.g. "2025-26"); year-keyed for time series |
 
-### 4.2 `cost_drivers` (23 rows × 3 cols)
+### 4.2 `commodity_costs_numeric` (53 rows × 11 cols)
+`category`, `commodity`, `vintage`, `cost_low`, `cost_high`, `cost_unit`,
+`cost_currency`, `cost_basis`, `is_metal_basis` (lgl), `numeric_available`
+(lgl), `parse_note`. Parsed from `cost_text`; **not unit-consistent across
+rows** — filter to one `cost_unit` before aggregating. Surfaced via
+`mcb_costs_numeric()`.
+
+### 4.3 `critical_mineral_strategy` (30 rows × 11 cols)
+`mineral` (joins to `commodity_costs$commodity`), `official_name`,
+`strategic_group`, `criticality_score` (num, = mean of the next two),
+`supply_risk` (int 1-5), `economic_importance` (int 1-5),
+`import_dependence_pct` (num), `domestic_reserves`, `key_producers`,
+`india_status`, `value_basis`. **Indicative starter values, not official.**
+Surfaced via `mcb_strategy()` / `mcb_strategic_groups()`.
+
+### 4.4 `cost_drivers` (23 rows × 3 cols)
 `driver_category`, `specific_drivers`, `rationale` — the cross-cutting drivers
 (energy, labour, strip ratio, comminution, water, tailings, royalties, FX,
 by-product credits, supply concentration, etc.).
 
-### 4.3 `cost_sources` (13 rows × 3 cols)
+### 4.5 `cost_sources` (19 rows × 3 cols)
 `section` ("NOTES" | "SOURCES"), `topic`, `detail` — interpretation guidance and
 indicative provenance, carried as data and surfaced via `mcb_sources()` and
 `inst/CITATION`.
@@ -128,13 +150,18 @@ indicative provenance, carried as data and surfaced via `mcb_sources()` and
 |---|---|---|
 | `mcb_categories()` | chr vector | The six category labels |
 | `mcb_commodities(category = NULL)` | chr vector | Commodity names, optionally filtered |
-| `mcb_costs(commodity = NULL, category = NULL)` | data.frame/tibble | Full cost record(s); exact-then-partial matching |
-| `mcb_drivers(commodity = NULL, category = NULL)` | tidy long df | One row per commodity × driver stage |
+| `mcb_costs(commodity, category, vintage)` | data.frame/tibble | Full cost record(s); exact-then-partial matching |
+| `mcb_costs_numeric(commodity, category, available_only)` | data.frame | Parsed numeric cost bounds |
+| `mcb_vintages()` | chr vector | Available snapshot vintages |
+| `mcb_drivers(commodity, category)` | tidy long df | One row per commodity × driver stage |
 | `mcb_byproducts()` | data.frame | Commodities with `is_byproduct == TRUE` |
 | `mcb_search(pattern)` | data.frame | Regex search across all text fields |
 | `mcb_cross_cutting(category = NULL)` | data.frame | Cross-cutting driver table |
+| `mcb_strategy(mineral, group, min_criticality)` | data.frame | India strategic-framework records |
+| `mcb_strategic_groups()` | chr vector | The four thematic groups |
 | `mcb_sources(section = NULL)` | data.frame | Notes / sources |
 | `mcb_plot_overview()` | ggplot | Coverage bar chart by category × mining basis |
+| `mcb_plot_criticality()` | ggplot | Supply-risk vs economic-importance matrix |
 
 Internal: `.mcb_match()` (matching strategy), `.mcb_frame()` (tibble-if-available).
 
@@ -187,17 +214,31 @@ MiningAnalytics setup.
 
 ## 8. Extension roadmap
 
-1. **Numeric cost layer** — an optional companion table
-   `commodity_costs_numeric` with `cost_low`, `cost_high`, `cost_unit`,
-   `cost_metal_basis`, populated only where a unit-consistent comparison is
-   defensible (e.g. base-metal C1 per tonne). Keeps the honest text in the main
-   table while enabling charts.
-2. **India columns** — `domestic_reserves`, `key_producers`,
-   `import_dependence_pct`, `criticality_score` joined onto the critical-minerals
-   rows (GSI / Ministry of Mines / NCMM).
-3. **Time series** — pivot from a single 2025-26 snapshot to a `year`-keyed
-   long table so cost-curve movement can be tracked; add a `vintage` column.
-4. **Geometry / joins** — link to producing states/districts for mapping
-   alongside MiningAnalytics.
-5. **`scales`/`ggplot2` cost-range plot** once (1) lands.
-6. **Citable DOI** — archive a release on Zenodo; update `inst/CITATION`.
+**Delivered in v0.2.0:**
+
+- [x] **Numeric cost layer** — `commodity_costs_numeric` with `cost_low`,
+  `cost_high`, `cost_unit`, `is_metal_basis`, `numeric_available`. Parsed from
+  `cost_text`; explicitly *not* unit-consistent across rows, so callers filter to
+  one `cost_unit`. Accessor `mcb_costs_numeric()`.
+- [x] **India strategic-framework columns** — `critical_mineral_strategy` (30
+  rows): `strategic_group`, `criticality_score` (= mean of `supply_risk` and
+  `economic_importance`), `import_dependence_pct`, `domestic_reserves`,
+  `key_producers`, `india_status`. Indicative starter values, joinable to
+  `commodity_costs` on the mineral name. Accessors `mcb_strategy()`,
+  `mcb_strategic_groups()`; plot `mcb_plot_criticality()`.
+- [x] **Time-series / vintage key** — `vintage` column on `commodity_costs` and
+  `commodity_costs_numeric` (all "2025-26"); schema ready to append snapshots.
+  `mcb_costs(vintage = )`, `mcb_vintages()`.
+- [x] **Filled cross-reference rows** — Copper, Nickel, Tin, PGE now carry their
+  own six-stage breakdown inside the critical category.
+
+**Still open:**
+
+1. **Replace starter strategy scores** with validated official values (GSI /
+   Ministry of Mines / NCMM / USGS / IEA) and add a citation per field.
+2. **Populate more of the numeric layer** — extract the metal-basis (C1/AISC)
+   ranges as additional rows so each commodity can carry both an ore-basis and a
+   metal-basis figure.
+3. **Geometry / joins** — link to producing states/districts for mapping
+   alongside MiningAnalytics. *(deferred)*
+4. **Citable DOI** — archive a release on Zenodo; update `inst/CITATION`.

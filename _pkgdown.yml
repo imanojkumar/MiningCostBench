@@ -3,12 +3,16 @@ template:
   bootstrap: 5
 reference:
   - title: Cost lookups
-    contents: [mcb_costs, mcb_commodities, mcb_categories, mcb_search]
+    contents: [mcb_costs, mcb_costs_numeric, mcb_commodities, mcb_categories,
+               mcb_vintages, mcb_search]
   - title: Drivers
     contents: [mcb_drivers, mcb_cross_cutting, mcb_byproducts]
+  - title: India strategic framework
+    contents: [mcb_strategy, mcb_strategic_groups]
   - title: Provenance
     contents: [mcb_sources]
   - title: Visualisation
-    contents: [mcb_plot_overview]
+    contents: [mcb_plot_overview, mcb_plot_criticality]
   - title: Data
-    contents: [commodity_costs, cost_drivers, cost_sources]
+    contents: [commodity_costs, commodity_costs_numeric,
+               critical_mineral_strategy, cost_drivers, cost_sources]

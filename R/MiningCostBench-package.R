@@ -11,6 +11,10 @@
 #'         six-stage cost-driver decomposition and a by-product flag.
 #'   \item \code{\link{cost_drivers}} - cross-cutting cost drivers that apply
 #'         across commodities.
+#'   \item \code{\link{commodity_costs_numeric}} - parsed numeric cost bounds
+#'         for charting (not unit-consistent across rows).
+#'   \item \code{\link{critical_mineral_strategy}} - indicative India
+#'         strategic-framework attributes for the 30 critical minerals.
 #'   \item \code{\link{cost_sources}} - interpretation notes and indicative
 #'         sources behind the figures.
 #' }
@@ -22,15 +26,33 @@
 #'   \item \code{\link{mcb_drivers}} (tidy long driver breakdown)
 #'   \item \code{\link{mcb_byproducts}}, \code{\link{mcb_search}}
 #'   \item \code{\link{mcb_cross_cutting}}, \code{\link{mcb_sources}}
-#'   \item \code{\link{mcb_plot_overview}}
+#'   \item \code{\link{mcb_costs_numeric}}, \code{\link{mcb_vintages}}
+#'   \item \code{\link{mcb_strategy}}, \code{\link{mcb_strategic_groups}}
+#'   \item \code{\link{mcb_plot_overview}}, \code{\link{mcb_plot_criticality}}
 #' }
 #'
 #' @section Caveat:
-#' Figures are indicative cash/production costs (not prices) and vary 3-5x with
-#' grade, method, depth, geography, currency and by-product credits. For many
-#' critical minerals the driver logic is far more reliable than the dollar
-#' figure. Verify against current company guidance or a commercial cost-curve
-#' provider before publication.
+#' All cost figures are indicative orientation values - NOT official, audited or
+#' authoritative numbers. They are paraphrased from public disclosures and
+#' industry studies (June 2026), are not prices, and vary 3-5x with grade,
+#' method, depth, geography, currency and by-product credits. For many critical
+#' minerals the driver logic is far more reliable than the dollar figure. Do not
+#' use as the sole basis for investment, procurement, valuation, regulatory or
+#' policy decisions; verify against current company guidance or a commercial
+#' cost-curve provider (Wood Mackenzie, CRU, S&P Global) before any formal use.
+#' Provided "as is" under MIT, without warranty of accuracy or fitness.
+#'
+#' @section Copper / Nickel / Tin / PGE:
+#' These four appear in both their base/precious category and the
+#' "Critical Minerals (India 30)" category. As of v0.2.0 the critical-category
+#' rows carry their own six-stage driver breakdown; the fuller treatment still
+#' lives in the Base/Precious Metals entry (noted inline in each).
+#'
+#' @section Strategic framework:
+#' \code{\link{critical_mineral_strategy}} adds indicative policy attributes
+#' (thematic group, criticality / supply-risk / economic-importance scores,
+#' import dependence, reserves, producers). These are STARTER values, not
+#' official Ministry of Mines / GSI figures - validate before policy use.
 #'
 #' @keywords internal
 "_PACKAGE"

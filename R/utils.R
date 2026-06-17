@@ -22,3 +22,5 @@
 
 # Quiet R CMD check for non-standard evaluation in ggplot2 aes()
 utils::globalVariables(c("category", "type"))
+
+utils::globalVariables(c("jx", "jy", "strategic_group", "official_name"))

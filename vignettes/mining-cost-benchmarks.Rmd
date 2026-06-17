@@ -63,10 +63,45 @@ head(mcb_cross_cutting(), 4)
 mcb_sources("SOURCES")
 ```
 
-## Caveats
+## India strategic framework
 
-Figures are indicative cash/production costs (not prices) and can vary 3-5x with
-grade, method, depth, geography, currency and by-product credits. For many
-critical minerals the **driver logic is more reliable than the dollar figure**.
-Always verify against current company guidance or a commercial cost-curve
-provider (Wood Mackenzie, CRU, S&P Global) before publication.
+`critical_mineral_strategy` adds policy-oriented attributes for the 30 critical
+minerals and joins to `commodity_costs` on the mineral name. The scores are
+**indicative starter values, not official figures**.
+
+```{r}
+mcb_strategic_groups()
+mcb_strategy(min_criticality = 4.5)[, c("official_name", "strategic_group",
+                                        "criticality_score", "import_dependence_pct")]
+```
+
+## Numeric layer and vintages
+
+For charting, `commodity_costs_numeric` provides parsed `cost_low`/`cost_high`
+bounds. Units differ across rows, so filter to one `cost_unit` first:
+
+```{r}
+subset(mcb_costs_numeric(category = "Precious Metals"),
+       cost_unit == "/oz")[, c("commodity", "cost_low", "cost_high", "cost_unit")]
+mcb_vintages()
+```
+
+## Caveats and terms of use
+
+Cost figures are **indicative orientation values — not official, audited, or
+authoritative numbers** — and are not prices. They can vary 3-5x with grade,
+method, depth, geography, currency and by-product credits. For many critical
+minerals the **driver logic is more reliable than the dollar figure**. Do not
+use the figures as the sole basis for investment, procurement, valuation,
+regulatory or policy decisions; always verify against current company guidance
+or a commercial cost-curve provider (Wood Mackenzie, CRU, S&P Global) before any
+formal use.
+
+**Cross-reference rows.** Copper, Nickel, Tin and PGE (Platinum-Group) appear in
+both their base/precious category and the critical category. As of v0.2.0 the
+critical-category rows carry their own driver breakdown; a fuller treatment still
+lives in the base/precious entry:
+
+```{r}
+mcb_drivers("copper", category = "Base Metals")[, c("driver_stage", "driver_text")]
+```

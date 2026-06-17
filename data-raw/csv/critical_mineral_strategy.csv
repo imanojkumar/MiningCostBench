@@ -1,0 +1,31 @@
+mineral,official_name,strategic_group,criticality_score,supply_risk,economic_importance,import_dependence_pct,domestic_reserves,key_producers,india_status,value_basis
+Lithium,Lithium,Energy & Electronics,5.0,5,5,100,Limited,"Australia, Chile, China",J&K (Reasi) resource under exploration; no production yet,INDICATIVE STARTER - validate against official sources
+Cobalt,Cobalt,Energy & Electronics,5.0,5,5,100,Negligible,"DR Congo, China (refining)",No primary production; fully import-reliant,INDICATIVE STARTER - validate against official sources
+Nickel,Nickel,Energy & Electronics,4.0,4,4,100,Limited,"Indonesia, Philippines",Negligible primary; Sukinda laterite potential,INDICATIVE STARTER - validate against official sources
+Copper,Copper,Energy & Electronics,4.0,3,5,95,Moderate,"Chile, Peru, DR Congo",HCL mines meet a small share; large refined-copper importer,INDICATIVE STARTER - validate against official sources
+Tin,Tin,Energy & Electronics,3.0,3,3,90,Limited,"China, Indonesia, Myanmar",Minor Bastar (Chhattisgarh) production,INDICATIVE STARTER - validate against official sources
+Gallium,Gallium,Energy & Electronics,4.5,5,4,100,By-product potential (alumina),China (~90%+),Recoverable from alumina refineries; not extracted at scale,INDICATIVE STARTER - validate against official sources
+Germanium,Germanium,Energy & Electronics,4.5,5,4,100,Negligible,"China, Russia",No production,INDICATIVE STARTER - validate against official sources
+Indium,Indium,Energy & Electronics,3.5,4,3,100,Negligible,"China, South Korea",No production,INDICATIVE STARTER - validate against official sources
+Tantalum,Tantalum,Energy & Electronics,3.5,4,3,100,Limited (pegmatites),"DR Congo, Rwanda, Brazil",Minor pegmatite occurrences; no production,INDICATIVE STARTER - validate against official sources
+REE (Rare Earths),Rare Earth Elements,Clean Energy & Advanced Tech,5.0,5,5,100,Significant (monazite beach sands),"China (~60% mine, ~90% separation)",IREL mines monazite; limited separation; large unexploited reserves,INDICATIVE STARTER - validate against official sources
+Silicon (metallurgical),Silicon,Clean Energy & Advanced Tech,3.5,3,4,40,Abundant quartz,China,Some met-grade silicon; polysilicon capacity limited,INDICATIVE STARTER - validate against official sources
+Tellurium,Tellurium,Clean Energy & Advanced Tech,3.5,4,3,100,Negligible (by-product),"China, Japan, Canada",No recovery,INDICATIVE STARTER - validate against official sources
+Titanium (mineral sands),Titanium,Clean Energy & Advanced Tech,3.5,3,4,60,Significant (ilmenite beach sands),"China, South Africa, Australia","Large mineral-sands reserves (IREL, KMML); limited sponge/pigment",INDICATIVE STARTER - validate against official sources
+Tungsten,Tungsten,Clean Energy & Advanced Tech,4.5,5,4,100,Limited (Degana etc.),China (~80%),Past Degana mine; negligible current production,INDICATIVE STARTER - validate against official sources
+Antimony,Antimony,Specialty Metals & Alloys,4.0,5,3,100,Negligible,"China, Russia, Tajikistan",No production,INDICATIVE STARTER - validate against official sources
+Beryllium,Beryllium,Specialty Metals & Alloys,3.5,4,3,90,Limited (pegmatites),USA (majority),Minor beryl occurrences; no metal production,INDICATIVE STARTER - validate against official sources
+Bismuth,Bismuth,Specialty Metals & Alloys,3.0,4,2,100,Negligible (by-product),China,No recovery,INDICATIVE STARTER - validate against official sources
+Cadmium,Cadmium,Specialty Metals & Alloys,2.0,2,2,50,By-product of zinc,"China, South Korea",Recovered at zinc smelters (Hindustan Zinc),INDICATIVE STARTER - validate against official sources
+Hafnium,Hafnium,Specialty Metals & Alloys,3.5,4,3,100,By-product of zircon,"France, USA",No production,INDICATIVE STARTER - validate against official sources
+Molybdenum,Molybdenum,Specialty Metals & Alloys,3.0,3,3,100,Limited,"China, Chile, USA",Trace by-product potential; no output,INDICATIVE STARTER - validate against official sources
+Niobium,Niobium,Specialty Metals & Alloys,3.5,4,3,100,Limited (carbonatites),Brazil (~90%),Carbonatite occurrences; no production,INDICATIVE STARTER - validate against official sources
+Vanadium,Vanadium,Specialty Metals & Alloys,3.0,3,3,80,Moderate (titaniferous magnetite),"China, Russia, South Africa",Potential from titaniferous magnetite & steel slag,INDICATIVE STARTER - validate against official sources
+Graphite (natural flake),Graphite,Industrial & Agricultural,4.0,4,4,40,"Moderate (Arunachal, Jharkhand, Odisha, TN)",China,Domestic flake production; limited battery-grade (CSPG),INDICATIVE STARTER - validate against official sources
+Phosphorous (phosphate rock),Phosphorus,Industrial & Agricultural,3.5,3,4,90,"Limited (Rajasthan, MP)","Morocco, China, USA",RSMML rock production; large rock/DAP importer (food security),INDICATIVE STARTER - validate against official sources
+Potash,Potash,Industrial & Agricultural,4.0,4,4,100,"Limited (Rajasthan, unexploited)","Canada, Russia, Belarus",~100% import; no production (food security),INDICATIVE STARTER - validate against official sources
+PGE (Platinum-Group),Platinum-Group Elements,Industrial & Agricultural,4.5,5,4,100,Negligible,"South Africa, Russia","Minor occurrences (Hanle, Boula-Nuasahi); no production",INDICATIVE STARTER - validate against official sources
+Rhenium,Rhenium,Industrial & Agricultural,3.5,4,3,100,Negligible (by-product),"Chile, USA, Poland",No production,INDICATIVE STARTER - validate against official sources
+Selenium,Selenium,Industrial & Agricultural,2.5,3,2,50,By-product of copper,"China, Japan, Germany",Recovered at copper refineries,INDICATIVE STARTER - validate against official sources
+Strontium,Strontium,Industrial & Agricultural,2.5,3,2,100,Limited,"China, Spain, Mexico, Iran",No production,INDICATIVE STARTER - validate against official sources
+Zirconium (zircon),Zirconium,Industrial & Agricultural,3.0,3,3,50,Significant (beach sands),"Australia, South Africa",Mineral-sands zircon (IREL); nuclear-grade Zr at NFC,INDICATIVE STARTER - validate against official sources

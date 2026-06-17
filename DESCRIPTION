@@ -1,10 +1,10 @@
 Package: MiningCostBench
 Type: Package
 Title: Benchmark Production Costs and Cost Drivers for Mining Commodities
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: c(
-    person("Manoj", "Kumar", email = "you@example.com",
-           role = c("aut", "cre"), comment = c(ORCID = "0000-0000-0000-0000")))
+    person("Manoj", "Kumar", email = "iManoj.Kumar@hotmail.com",
+           role = c("aut", "cre"), comment = c(ORCID = "0000-0001-8988-038X")))
 Description: A curated, citable data package of indicative cash/production cost
     ranges and structured cost-driver breakdowns for mining and mineral
     commodities, organised by category: coal and lignite by rank, base metals,
@@ -29,6 +29,6 @@ Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 VignetteBuilder: knitr
-RoxygenNote: 7.3.1
 URL: https://github.com/imanojkumar/MiningCostBench
 BugReports: https://github.com/imanojkumar/MiningCostBench/issues
+Config/roxygen2/version: 8.0.0

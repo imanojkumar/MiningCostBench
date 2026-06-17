@@ -7,6 +7,12 @@
 #' @param category Optional category filter.
 #' @return A data frame with columns \code{category}, \code{commodity},
 #'   \code{driver_stage} and \code{driver_text}.
+#' @section Copper / Nickel / Tin / PGE:
+#' These four appear in both their base/precious category and the critical
+#' category. As of v0.2.0 the critical-category rows have their own driver
+#' breakdown, so \code{mcb_drivers("copper", category = "Critical Minerals (India 30)")}
+#' now returns stages; the fuller treatment is in the base/precious entry, e.g.
+#' \code{mcb_drivers("copper", category = "Base Metals")}.
 #' @export
 #' @examples
 #' mcb_drivers("copper")
