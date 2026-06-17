@@ -5,6 +5,6 @@ bibentry(
   title    = "MiningCostBench: Benchmark Production Costs and Cost Drivers for Mining Commodities",
   author   = person("Manoj", "Kumar"),
   year     = "2026",
-  note     = "R package version 0.2.0",
+  note     = "R package version 1.0.0",
   url      = "https://github.com/imanojkumar/MiningCostBench"
 )

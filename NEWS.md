@@ -1,3 +1,8 @@
+# MiningCostBench 1.0.0
+
+* First stable release.
+* The public API for data accessors (`mcb_costs`, `mcb_drivers`, `mcb_strategy`, etc.) is now considered stable.
+
 # MiningCostBench 0.2.0
 
 Adds the India strategic-framework layer, a numeric cost layer, a vintage key,

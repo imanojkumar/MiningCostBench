@@ -4,6 +4,8 @@ A design blueprint for an R **data package** that encapsulates the expanded
 mining-commodity cost workbook (all eight sheets, including Notes & Sources) as
 tidy, queryable, documented, and citable R objects.
 
+**Status:** Stable (v1.0.0) — Public API is locked and production-ready.
+
 ---
 
 ## 1. Purpose and scope
@@ -214,7 +216,7 @@ MiningAnalytics setup.
 
 ## 8. Extension roadmap
 
-**Delivered in v0.2.0:**
+**Delivered in v1.0.0 (Core API):**
 
 - [x] **Numeric cost layer** — `commodity_costs_numeric` with `cost_low`,
   `cost_high`, `cost_unit`, `is_metal_basis`, `numeric_available`. Parsed from
@@ -232,7 +234,7 @@ MiningAnalytics setup.
 - [x] **Filled cross-reference rows** — Copper, Nickel, Tin, PGE now carry their
   own six-stage breakdown inside the critical category.
 
-**Still open:**
+**Future Roadmap (v1.x)**
 
 1. **Replace starter strategy scores** with validated official values (GSI /
    Ministry of Mines / NCMM / USGS / IEA) and add a citation per field.
