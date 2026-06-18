@@ -1,5 +1,3 @@
-<img src="https://img.shields.io/badge/data%20package-R-blue" align="left" alt="R data package"/>
-
 # MiningCostBench 
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20722764.svg)](https://doi.org/10.5281/zenodo.20722764)
@@ -8,6 +6,8 @@
 [![R-CMD-check](https://github.com/imanojkumar/MiningCostBench/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/imanojkumar/MiningCostBench/actions/workflows/R-CMD-check.yaml)
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![R data package](https://img.shields.io/badge/data%20package-R-blue)
+
 <!-- badges: end -->
 
 > Benchmark production costs and structured cost drivers for mining commodities.
